@@ -1,27 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Formulario</title>
-  </head>
-  <body>
-    <h1>Formulario</h1>
-    <form method="POST" action="/">
-      <label for="id">ID:</label>
-      <input type="text" name="id" ><br>
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" ><br>
-      <label for="apellido">Apellido:</label>
-      <input type="text" name="apellido" ><br>
-      <label for="titulo">Título:</label>
-      <input type="text" name="titulo" ><br>
-      <label for="autor">Autor:</label>
-      <input type="text" name="autor" ><br>
-      <label for="editorial">Editorial:</label>
-      <input type="text" name="editorial" ><br>
-      <label for="anio">Año:</label>
-      <input type="text" name="anio"><br>
-      <button type="submit">Enviar</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body> 
+  <div class="container">
+    <h1 class="text-center text-red">Formulario</h1>
+    <form action="/" method="post">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <label for="id" class="form-label text-black">ID:</label>
+          <input type="text" class="form-control" name="id">
+        </div>
+        <div class="col-md-4">
+          <label for="nombre" class="form-label text-black">Nombre:</label>
+          <input type="text" class="form-control" name="nombre">
+        </div>
+        <div class="col-md-4">
+          <label for="apellido" class="form-label text-black">Apellido:</label>
+          <input type="text" class="form-control" name="apellido">
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="titulo" class="form-label text-black">Título:</label>
+          <input type="text" class="form-control" name="titulo">
+        </div>
+        <div class="col-md-6">
+          <label for="autor" class="form-label text-black">Autor:</label>
+          <input type="text" class="form-control" name="autor">
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="editorial" class="form-label text-black">Editorial:</label>
+          <input type="text" class="form-control" name="editorial">
+        </div>
+        <div class="col-md-6">
+          <label for="anio" class="form-label text-black">Año:</label>
+          <input type="text" class="form-control" name="anio">
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-12">
+          <button type="submit" class="btn btn-danger">Enviar</button>
+        </div>
+      </div>
     </form>
-  </body>
+  </div>
+</body>
 </html>
